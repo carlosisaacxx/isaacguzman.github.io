@@ -1,0 +1,14 @@
+$color-p: #F2F2F2;
+$color-s: #A6A6A6;
+$color-t: #595959;
+$color-q: #262626;
+$color-f: #0D0D0D;
+
+body{
+    font-family: "Roboto", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 400 ;
+    font-style: normal !important;
+    font-variation-settings: "wdth" 100 !important;    
+    background-color: $color-p !important;
+}
