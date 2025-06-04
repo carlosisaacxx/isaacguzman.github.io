@@ -10,6 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icon_title.png">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
 
@@ -76,14 +77,85 @@
 <!-- Experience -->
  <!-- Contenedor general -->
 <section id="experience" class="py-5 bg-light">
-  <div class="container">
+  <!-- <div class="container">
     <h2 class="section-title">Experiencia Profesional</h2>
-    <div class="experience-container">
+    <div class="experience-container d-flex flex-row flex-nowrap">
       <div class="date-menu">
-
+        <nav class="nav d-flex flex-column justify-content-center align-items-center menu-lateral">
+          <a class="nav-link mx-3 year" href="#">2025</a>
+          <a class="nav-link mx-3 year" href="#">2024</a>
+          <a class="nav-link mx-3 year" href="#">2023</a>
+        </nav>
       </div>
       <div class="experience-section">
-        
+        <div id="exp-2025" class="exp-block mb-5">
+          <h4 class="fw-bold mb-3">2025</h4>
+          <div class="mb-3">
+            <h6 class="mb-1 fw-semibold">Desarrollador fullstack semi-senior – <span class="text-muted">BEIT Tecnologías de la Información</span></h6>
+            <small class="text-secondary d-block mb-1">Julio 2024 – Actualidad</small>
+            <p class="text-muted small">
+              A lo largo de este año, he desempeñado diversas colaboraciones en proyectos, esto me ha ayudado en aprender nuevas tecnologías así como mejorar/integrar nuevos conceptos, tecnicas, y metodologías en la gestión y construcción de las aplicaciones. Comparto un poco de lo que he hecho:
+            </p>
+            <ul class="list-group list-group-flush exp-list">
+              <li class="list-group-item bg-light">An item</li>
+              <li class="list-group-item bg-light">A second item</li>
+              <li class="list-group-item bg-light">A third item</li>
+              <li class="list-group-item bg-light">A fourth item</li>
+              <li class="list-group-item bg-light">And a fifth one</li>
+            </ul>
+          </div>
+          <div class="mb-3">
+            <h6 class="mb-1 fw-semibold">Proyecto personal – <span class="text-muted">Chatbot IA para consultorio dental</span></h6>
+            <small class="text-secondary d-block mb-1">Feb 2025 – Abr 2025</small>
+            <p class="text-muted small">Desarrollé una IA local basada en Python que interpreta lenguaje natural y agenda citas a través de WhatsApp y .NET.</p>
+          </div> 
+          <div class="mb-3">
+            <h6 class="mb-1 fw-semibold">Tooling – <span class="text-muted">Trackeador de tiempos libre</span></h6>
+            <small class="text-secondary d-block mb-1">Mar 2025</small>
+            <p class="text-muted small">Aplicación liviana para registrar y exportar tiempos de trabajo. Usada para gestión personal y compartida en GitHub.</p>
+          </div>
+        </div>
+        <div id="exp-2024" class="exp-block mb-5">
+          <h4 class="fw-bold mb-3">2024</h4>
+          <div class="mb-3">
+            <h6 class="mb-1 fw-semibold">Desarrollador Fullstack – <span class="text-muted">GSB</span></h6>
+            <small class="text-secondary d-block mb-1">Ene 2024 – Jun 2024</small>
+            <p class="text-muted small">Participación en proyectos internos con tecnologías Angular, C#, integración con servicios de terceros y control de calidad.</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="mb-1 fw-semibold">Freelancer – <span class="text-muted">Soluciones personalizadas</span></h6>
+            <small class="text-secondary d-block mb-1">Jul 2024 – Ago 2024</small>
+            <p class="text-muted small">Desarrollé aplicaciones para clientes locales, como sistemas de inventario y módulos de CRM ligeros.</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="mb-1 fw-semibold">Incorporación – <span class="text-muted">BEIT Tecnologías de la Información</span></h6>
+            <small class="text-secondary d-block mb-1">Sep 2024</small>
+            <p class="text-muted small">Inicio de colaboración en proyectos backend, soporte técnico y documentación de procesos internos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="container">
+    <h2 class="section-title">Experiencia Profesional</h2>
+    <div class="row">
+      <div class="col-2">
+        <div class="list-group d-flex flex-column menu-year" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active text-center" id="list-2025-list" data-bs-toggle="list" href="#list-2025" role="tab" aria-controls="list-2025">2025</a>
+          <a class="list-group-item list-group-item-action text-center" id="list-2024-list" data-bs-toggle="list" href="#list-2024" role="tab" aria-controls="list-2024">2024</a>
+          <a class="list-group-item list-group-item-action text-center" id="list-2023-list" data-bs-toggle="list" href="#list-2023" role="tab" aria-controls="list-2023">2023</a>
+          <a class="list-group-item list-group-item-action text-center" id="list-2022-list" data-bs-toggle="list" href="#list-2022" role="tab" aria-controls="list-2022">2022</a>
+          <a class="list-group-item list-group-item-action text-center" id="list-2021-list" data-bs-toggle="list" href="#list-2021" role="tab" aria-controls="list-2021">2021</a>
+        </div>
+      </div>
+      <div class="col-10">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-2025" role="tabpanel" aria-labelledby="list-2025-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos reprehenderit dolor excepturi sequi. Quae, facilis. Deleniti illo perferendis, modi similique voluptatem cumque, veritatis fugit ipsam culpa quia, aut voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatem, commodi illo, similique exercitationem id ea nobis magni suscipit maiores quo reiciendis dignissimos ut est reprehenderit maxime totam, quod culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non molestias deleniti iste laudantium inventore placeat enim veniam, aliquam porro, voluptatum atque est nulla minus, error doloremque facere. Dolorum, quidem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque id cupiditate magnam quibusdam, eos aut natus expedita rem ut. Itaque repellendus, nesciunt velit quidem aliquam unde quas nam necessitatibus odio..</div>
+          <div class="tab-pane fade" id="list-2024" role="tabpanel" aria-labelledby="list-2024-list">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, aliquam pariatur. Voluptate perferendis facilis aspernatur soluta repudiandae similique tempore consectetur, nisi reiciendis, voluptas nemo sint cum error ab neque officia?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatem, commodi illo, similique exercitationem id ea nobis magni suscipit maiores quo reiciendis dignissimos ut est reprehenderit maxime totam, quod culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non molestias deleniti iste laudantium inventore placeat enim veniam, aliquam porro, voluptatum atque est nulla minus, error doloremque facere. Dolorum, quidem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque id cupiditate magnam quibusdam, eos aut natus expedita rem ut. Itaque repellendus, nesciunt velit quidem aliquam unde quas nam necessitatibus odio.</div>
+          <div class="tab-pane fade" id="list-2023" role="tabpanel" aria-labelledby="list-2023-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, aliquam pariatur. Voluptate perferendis facilis aspernatur soluta repudiandae similique tempore consectetur, nisi reiciendis, voluptas nemo sint cum error ab neque officia?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatem, commodi illo, similique exercitationem id ea nobis magni suscipit maiores quo reiciendis dignissimos ut est reprehenderit maxime totam, quod culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non molestias deleniti iste laudantium inventore placeat enim veniam, aliquam porro, voluptatum atque est nulla minus, error doloremque facere. Dolorum, quidem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque id cupiditate magnam quibusdam, eos aut natus expedita rem ut. Itaque repellendus, nesciunt velit quidem aliquam unde quas nam necessitatibus odio.</div>
+          <div class="tab-pane fade" id="list-2022" role="tabpanel" aria-labelledby="list-2022-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, aliquam pariatur. Voluptate perferendis facilis aspernatur soluta repudiandae similique tempore consectetur, nisi reiciendis, voluptas nemo sint cum error ab neque officia?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatem, commodi illo, similique exercitationem id ea nobis magni suscipit maiores quo reiciendis dignissimos ut est reprehenderit maxime totam, quod culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non molestias deleniti iste laudantium inventore placeat enim veniam, aliquam porro, voluptatum atque est nulla minus, error doloremque facere. Dolorum, quidem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque id cupiditate magnam quibusdam, eos aut natus expedita rem ut. Itaque repellendus, nesciunt velit quidem aliquam unde quas nam necessitatibus odio.</div>
+          <div class="tab-pane fade" id="list-2021" role="tabpanel" aria-labelledby="list-2021-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, aliquam pariatur. Voluptate perferendis facilis aspernatur soluta repudiandae similique tempore consectetur, nisi reiciendis, voluptas nemo sint cum error ab neque officia?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatem, commodi illo, similique exercitationem id ea nobis magni suscipit maiores quo reiciendis dignissimos ut est reprehenderit maxime totam, quod culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non molestias deleniti iste laudantium inventore placeat enim veniam, aliquam porro, voluptatum atque est nulla minus, error doloremque facere. Dolorum, quidem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque id cupiditate magnam quibusdam, eos aut natus expedita rem ut. Itaque repellendus, nesciunt velit quidem aliquam unde quas nam necessitatibus odio.</div>
+        </div>
       </div>
     </div>
   </div>

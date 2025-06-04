@@ -18,7 +18,7 @@
 }
 body {
   font-family: var(--font-base);
-  background-color: var(--color-p);
+  background-color: var(--color-p) !important;
   color: var(--color-q);
   scroll-behavior: smooth;
 }
@@ -73,12 +73,22 @@ a:hover {
   text-align: justify;
 }
 
+.text-center{
+  text-align: center;
+}
+
 /*Expirience*/
 .section-title {
   font-size: 2rem;
   color: var(--color-q);
-  border-left: 5px solid var(--color-q);
+  border-left: 5px solid var(--color-q) !important;
   padding-left: 0.5rem;
+}
+
+/*Menú lateral*/
+.date-menu{
+  border-right: 1px solid var(--color-t);
+  width: 10%;
 }
 
 .menu-lateral .nav-link {
@@ -86,10 +96,14 @@ a:hover {
   transition: all 0.2s ease-in-out;
   border-left: 3px solid transparent;
   padding-left: 1rem;
+  margin-bottom: 1.2em;
 }
 
 .menu-lateral .nav-link:hover {
   color: var(--color-q);
+  font-weight: bold;
+  border-left: 3px solid var(--color-q);
+  background-color: rgba(38, 38, 38, 0.05);
 }
 
 .menu-lateral .nav-link.active {
@@ -99,6 +113,23 @@ a:hover {
   background-color: rgba(38, 38, 38, 0.05);
 }
 
+.menu-year .list-group-item-action{
+  background-color: #f8f9fa;
+  color: var(--color-t);
+  transition: all 0.2s ease-in-out;
+  border-left: 3px solid transparent;
+  padding-left: 1rem;
+}
+
+.menu-year .active{
+  background-color: var(--color-s);
+}
+
+/*Year content*/
+.experience-section{
+  width: 90%;
+  padding: 0 0 0 2em;
+}
 
 .experience-content {
   max-height: 500px;
