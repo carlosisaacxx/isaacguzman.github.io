@@ -117,12 +117,28 @@ a:hover {
   background-color: #f8f9fa;
   color: var(--color-t);
   transition: all 0.2s ease-in-out;
-  border-left: 3px solid transparent;
+  border: none;
+  border-left: 3px solid transparent !important;
+  border-radius: 0;
   padding-left: 1rem;
 }
 
 .menu-year .active{
   background-color: var(--color-s);
+}
+
+.menu-year .list-group-item-action:hover {
+  color: var(--color-q);
+  font-weight: bold;
+  border-left: 3px solid var(--color-q);
+  background-color: rgba(38, 38, 38, 0.05);
+}
+
+.menu-year .list-group-item-action.active {
+  color: var(--color-q);
+  font-weight: bold;
+  border-left: 3px solid var(--color-q) !important;
+  background-color: rgba(38, 38, 38, 0.05);
 }
 
 /*Year content*/
@@ -157,4 +173,27 @@ a:hover {
 
 .exp-block small {
   font-size: 0.85rem;
+}
+
+.tab-content .tab-pane{
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.tab-content .tab-pane::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tab-content .tab-pane::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tab-content .tab-pane::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1); 
+  border-radius: 4px;
+}
+
+.tab-pane {
+  transition: all 0.3s ease-in-out;
 }
