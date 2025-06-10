@@ -48,7 +48,7 @@ Este repositorio puede incluir fragmentos o referencias de código que:
 
 ## ✉️ Contacto
 
-Si tienes dudas, deseas comentar sobre el contenido o buscas colaboración técnica, puedes escribirme por aquí o conectar conmigo vía LinkedIn: https://www.linkedin.com/in/carlos-guzman-developer-web/ ó bien por GitHub: carlosisaacxx
+Si tienes dudas, deseas comentar sobre el contenido o buscas colaboración técnica, puedes escribirme por aquí o conectar conmigo vía LinkedIn: (https://www.linkedin.com/in/carlos-guzman-developer-web/) ó bien por GitHub: [carlosisaacxx](https://github.com/carlosisaacxx)
 
 ---
 
