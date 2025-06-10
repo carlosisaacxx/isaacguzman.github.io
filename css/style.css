@@ -42,6 +42,28 @@ section {
 }
 
 /* Timeline (educación u otra sección) */
+.education-list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: none !important;
+  border-radius: .2em !important;
+}
+
+.education-list h4{
+  font-size: 1.1em !important;
+}
+
+.education-list .education-subtitle{
+  font-size: .80em !important;
+  font-weight: 400;
+}
+
+.education-list h6{
+  font-size: 1em !important;
+  font-weight: 300;
+}
 
 /* Avatar hero */
 #hero img {
