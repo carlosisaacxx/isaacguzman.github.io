@@ -27,6 +27,10 @@ a:hover {
   background-color: var(--color-p) !important;
 }
 
+section {
+  scroll-margin-top: 3em !important; /* Ajusta según la altura real de tu navbar */
+}
+
 .section-title {
   font-size: 2rem;
   color: var(--color-q);
@@ -38,27 +42,6 @@ a:hover {
 }
 
 /* Timeline (educación u otra sección) */
-.timeline {
-  position: relative;
-  padding-left: 1.5rem;
-  border-left: 2px solid var(--color-s);
-}
-
-.timeline-item {
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -9px;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  background-color: var(--color-t);
-  border-radius: 50%;
-}
 
 /* Avatar hero */
 #hero img {
