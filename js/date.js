@@ -8,6 +8,6 @@ $(document).ready(function () {
   const nameMounth = mounth[date.getMonth()];
   const year = date.getFullYear();
 
-  const dateFormatter = `${nameMounth} ${year}`;
+  const dateFormatter = `${nameMounth } ${year}`;
   $("#present-day").text(dateFormatter);
 });

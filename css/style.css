@@ -1,13 +1,3 @@
-/* body {
-  font-family: "Roboto", sans-serif !important;
-  font-optical-sizing: auto !important;
-  font-weight: 400;
-  font-style: normal !important;
-  font-variation-settings: "wdth" 100 !important;
-  background-color: #F2F2F2 !important;
-} */
-
-
 :root {
   --color-p: #F2F2F2;
   --color-s: #A6A6A6;
@@ -16,37 +6,49 @@
   --color-f: #0D0D0D;
   --font-base: 'Roboto', sans-serif;
 }
+
 body {
   font-family: var(--font-base);
   background-color: var(--color-p) !important;
   color: var(--color-q);
   scroll-behavior: smooth;
 }
+
 a {
   color: var(--color-t);
   text-decoration: none;
 }
+
 a:hover {
   color: var(--color-f);
 }
+
 .navbar {
   background-color: var(--color-p) !important;
 }
+
 .section-title {
-  color: var(--color-f);
+  font-size: 2rem;
+  color: var(--color-q);
+  border-left: 5px solid var(--color-q) !important;
+  padding-left: 0.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
 }
+
+/* Timeline (educación u otra sección) */
 .timeline {
   position: relative;
   padding-left: 1.5rem;
   border-left: 2px solid var(--color-s);
 }
+
 .timeline-item {
   margin-bottom: 1.5rem;
   position: relative;
 }
+
 .timeline-item::before {
   content: '';
   position: absolute;
@@ -58,14 +60,13 @@ a:hover {
   border-radius: 50%;
 }
 
-#hero{
-  img{
-    width: 10vw;
-    height: 10vw;
-  }
+/* Avatar hero */
+#hero img {
+  width: 10vw;
+  height: 10vw;
 }
 
-.ordered-paragraph{
+.ordered-paragraph {
   word-break: keep-all;
 }
 
@@ -73,47 +74,32 @@ a:hover {
   text-align: justify;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-/*Expirience*/
-.section-title {
-  font-size: 2rem;
+/* Sticky año actual */
+.sticky-year-indicator {
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+  background-color: var(--color-p);
   color: var(--color-q);
-  border-left: 5px solid var(--color-q) !important;
-  padding-left: 0.5rem;
-}
-
-/*Menú lateral*/
-.date-menu{
-  border-right: 1px solid var(--color-t);
-  width: 10%;
-}
-
-.menu-lateral .nav-link {
-  color: var(--color-t);
-  transition: all 0.2s ease-in-out;
-  border-left: 3px solid transparent;
-  padding-left: 1rem;
-  margin-bottom: 1.2em;
-}
-
-.menu-lateral .nav-link:hover {
-  color: var(--color-q);
+  font-size: 1.25rem;
   font-weight: bold;
-  border-left: 3px solid var(--color-q);
-  background-color: rgba(38, 38, 38, 0.05);
+  padding: 0.5rem 1rem;
+  border-left: 4px solid var(--color-q);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.menu-lateral .nav-link.active {
-  color: var(--color-q);
-  font-weight: bold;
-  border-left: 3px solid var(--color-q);
-  background-color: rgba(38, 38, 38, 0.05);
+/* Menú lateral de años */
+.menu-year{
+  width: 12vw;
+  height: 100%;
 }
 
-.menu-year .list-group-item-action{
+.menu-year .list-group-item-action {
   background-color: #f8f9fa;
   color: var(--color-t);
   transition: all 0.2s ease-in-out;
@@ -121,10 +107,6 @@ a:hover {
   border-left: 3px solid transparent !important;
   border-radius: 0;
   padding-left: 1rem;
-}
-
-.menu-year .active{
-  background-color: var(--color-s);
 }
 
 .menu-year .list-group-item-action:hover {
@@ -141,27 +123,44 @@ a:hover {
   background-color: rgba(38, 38, 38, 0.05);
 }
 
-/*Year content*/
-.experience-section{
-  width: 90%;
-  padding: 0 0 0 2em;
+/* Contenido de experiencia (scroll interno) */
+.section-year{
+  height: 45vh;
 }
 
 .experience-content {
-  max-height: 500px;
-  overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE 10+ */
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 1rem;
   scroll-behavior: smooth;
 }
+
 .experience-content::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  width: 6px;
 }
 
-.exp-block {
-  scroll-margin-top: 80px;
+.experience-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 
+/* Bloques de año */
+.tab-pane {
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+  scroll-margin-top: 100px;
+}
+
+.tab-pane:not(.active) {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Detalles de experiencia */
 .exp-block h6 {
   font-weight: 600;
   color: var(--color-q);
@@ -175,25 +174,115 @@ a:hover {
   font-size: 0.85rem;
 }
 
-.tab-content .tab-pane{
-  max-height: 50vh;
-  overflow-y: auto;
-  padding-right: 1rem;
+/**Acordion experience*/
+ /* Aplicar fuente base a todo el contenedor del accordion */
+.custom-accordion {
+  font-family: var(--font-base);
 }
 
-.tab-content .tab-pane::-webkit-scrollbar {
-  width: 6px;
+/* Eliminar bordes nativos de Bootstrap y espacio entre ítems */
+.custom-accordion .accordion-item {
+  border: none;
+  margin-bottom: 1rem;
 }
 
-.tab-content .tab-pane::-webkit-scrollbar-track {
-  background: transparent;
+.accordion-title-role h4{
+  font-size: .9em;
 }
 
-.tab-content .tab-pane::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.1); 
-  border-radius: 4px;
+.accordion-title-role h6{
+  font-size: .75em;
 }
 
-.tab-pane {
-  transition: all 0.3s ease-in-out;
+/* Estilo del botón (header) en estado colapsado */
+.custom-accordion .accordion-button {
+  background-color: var(--color-q);
+  color: var(--color-p);
+  font-size: 1.1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px #0000001a;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-accordion .accordion-button small {
+  color: var(--color-p) !important;
+  transition: color 0.3s ease;
+}
+
+/* Eliminar el ícono de flecha predeterminado de Bootstrap */
+.custom-accordion .accordion-button::after {
+  display: none;
+}
+
+/* Cuando el ítem está expandido, cambiar fondo y color de texto */
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--color-p);
+  color: var(--color-q);
+}
+
+.custom-accordion .accordion-button:not(.collapsed) small {
+  color: var(--color-q) !important;
+}
+
+/* Hover sobre el botón colapsado para indicar interactividad */
+.custom-accordion .accordion-button:hover {
+  background-color: #e0e0e0;
+  color: var(--color-f);
+}
+
+.custom-accordion .accordion-button:hover small {
+  color: var(--color-f) !important;
+}
+
+/* Estilo del contenido (body) colapsable */
+.custom-accordion .accordion-body {
+  background-color: var(--color-p);
+  color: var(--color-t);
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem 1.25rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Separador inferior suave entre header y body */
+.custom-accordion .accordion-item + .accordion-item .accordion-button {
+  margin-top: 0.5rem;
+}
+
+.resume-activities{
+  width: 100%;
+}
+
+.resume-activities h6{
+  display: flex;
+  flex: row nowrap;
+  align-items: center;
+  color: var(--color-q)
+}
+
+.resume-activities p{
+  margin-right: 2em !important;
+  color: var(--color-q);
+  overflow-wrap: break-word;
+}
+
+.resume-techtools{
+  width: 25%;
+}
+
+.resume-techtools ul li img{
+  width: 2em;
+  height: 2em;
+  margin: .2em 0 .2em 0;
+}
+
+.resume-techtools h6{
+  color: var(--color-q);
+}
+
+.resume-techtools ul li{
+  color: var(--color-t);
+  background-color: var(--color-p);
 }

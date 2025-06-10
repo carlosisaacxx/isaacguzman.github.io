@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/svg+xml" href="assets/icon_title.png">
 </head>
@@ -40,7 +41,7 @@
   </div>
   <div class="container">
     <h1 class="display-5 fw-bold">Carlos Isaac Guzmán Pérez</h1>
-    <p class="lead text-secondary">Desarrollador semi-senior</p>
+    <p class="lead text-secondary">Ingeniero en TI</p>
     <p>Profesional en el desarrollo de aplicaciones web; con perfil de fullstack. Especializado en generar soluciones robustas y escalables bajo metodologías ágiles e implementado mejores practicas en Clean Code/Architecture.</p>
     <a href="#contact" class="btn btn-outline-dark mt-3">Contáctame</a>
   </div>
@@ -78,64 +79,252 @@
 <section id="experience" class="py-5 bg-light">
   <div class="container">
     <h2 class="section-title">Experiencia Profesional</h2>
-    <div class="row">
-      <div class="col-2">
-        <div class="list-group d-flex flex-column menu-year" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active text-center" id="list-2025-list" data-bs-toggle="list" href="#list-2025" role="tab" aria-controls="list-2025">2025</a>
-          <a class="list-group-item list-group-item-action text-center" id="list-2024-list" data-bs-toggle="list" href="#list-2024" role="tab" aria-controls="list-2024">2024</a>
-          <a class="list-group-item list-group-item-action text-center" id="list-2023-list" data-bs-toggle="list" href="#list-2023" role="tab" aria-controls="list-2023">2023</a>
-          <a class="list-group-item list-group-item-action text-center" id="list-2022-list" data-bs-toggle="list" href="#list-2022" role="tab" aria-controls="list-2022">2022</a>
-          <a class="list-group-item list-group-item-action text-center" id="list-2021-list" data-bs-toggle="list" href="#list-2021" role="tab" aria-controls="list-2021">2021</a>
+    <div class="container my-4">
+      <div class="accordion custom-accordion" id="accordionExperiencia">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingBeit">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseBeit"
+              aria-expanded="false"
+              aria-controls="collapseBeit"
+            >
+              <div class="w-100 d-flex justify-content-between align-items-center">
+                <div class="accordion-title-role">
+                  <h6 class="fw-lighter">Be-IT Software Factory</h6>
+                  <h4 class="fw-semibold">Desarrollador fullstack semi-senior</h4>
+                </div>
+                <small class="fst-italic fw-light">Julio 2024 – Junio 2025</small>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseBeit"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingBeit"
+            data-bs-parent="#accordionExperiencia"
+          >
+            <div class="accordion-body d-flex flex-row flex-nowrap">
+              <div class="resume-activities text-justify">
+                <h6>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#262626"><path d="M160-80q-33 0-56.5-23.5T80-160v-440q0-33 23.5-56.5T160-680h200v-120q0-33 23.5-56.5T440-880h80q33 0 56.5 23.5T600-800v120h200q33 0 56.5 23.5T880-600v440q0 33-23.5 56.5T800-80H160Zm0-80h640v-440H600q0 33-23.5 56.5T520-520h-80q-33 0-56.5-23.5T360-600H160v440Zm80-80h240v-18q0-17-9.5-31.5T444-312q-20-9-40.5-13.5T360-330q-23 0-43.5 4.5T276-312q-17 8-26.5 22.5T240-258v18Zm320-60h160v-60H560v60Zm-200-60q25 0 42.5-17.5T420-420q0-25-17.5-42.5T360-480q-25 0-42.5 17.5T300-420q0 25 17.5 42.5T360-360Zm200-60h160v-60H560v60ZM440-600h80v-200h-80v200Zm40 220Z"/></svg>
+                  <span class="mx-2">Descripción del puesto:</span>
+                </h6>
+                <p class="text-muted small">
+                  Me desempeño como desarrollador fullstack, trabajando tanto en el desarrollo de interfaces de usuario como en la lógica del servidor y la gestión de datos. A partir de requerimientos previamente refinados, los transformo en historias de usuario y los descompongo en tareas técnicas más pequeñas para su estimación y planificación.
+                </p>
+                <p class="text-muted small">
+                  Participo activamente en todas las etapas del ciclo de vida del software, desde el análisis y diseño de funcionalidades hasta la codificación, validación, entrega y mantenimiento. Implemento reglas de negocio, realizo pruebas de código (unitarias, integración y validaciones de seguridad) y colaboro en la entrega de versiones estables.
+                </p>
+                <p class="text-muted small">
+                  Además de mis labores técnicas, he asumido responsabilidades de mentoría, guiando a un becario en su formación académica y profesional dentro del equipo, promoviendo buenas prácticas y crecimiento técnico.
+                </p>
+
+                <h6>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#262626"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm276-102q41-45 62.5-100.5T800-480q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h240q17 0 28.5 11.5T600-440v120h40q26 0 47 15.5t29 40.5Z"/></svg>
+                  <span class="mx-2">Proyectos <small>(Privados)</small></span>
+                </h6>
+                <p class="text-muted small mx-5">
+                  • Aplicación web para la gestión y monitoreo de consumo energético en entornos industriales, con visualización de indicadores clave, generación de reportes personalizados y control de desviaciones en tiempo real.
+                </p>
+                <p class="text-muted small mx-5">
+                  • Aplicación móvil para la gestión de tarjetas de regalo con valor equivalente a moneda real, utilizada como medio de pago en tiendas y gasolineras participantes mediante un sistema de saldo digital.
+                </p>
+                <p class="text-muted small mx-5">
+                  • Sistema financiero para constructoras y despachos de arquitectura, con enfoque en control de presupuestos, flujos de caja, seguimiento de pagos a proveedores, costos por proyecto y reportes financieros consolidados.
+                </p>
+                <p class="text-muted small mx-5">
+                  • Aplicación web como herramienta de gestión y control para un consultorio médico, que centraliza el historial clínico de pacientes, permite la generación de citas y administra el calendario de atención médica.
+                </p>
+                <p class="text-muted small mx-5">
+                  • Plataforma médica orientada a la gestión integral de pacientes: generación de reportes clínicos, evaluaciones médicas, emisión de pólizas y facturación de seguros, así como control de pagos y nómina del personal.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-10">
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="list-2025" role="tabpanel" aria-labelledby="list-2025-list">
-            <h4 class="fw-bold mb-3">2025</h4>
-            <div class="mb-3">
-              <h6 class="mb-1 fw-semibold">Desarrollador fullstack semi-senior – <span class="text-muted">BEIT TECNOLOGÍAS DE LA INFORMACIÓN</span></h6>
-              <small class="text-secondary d-block mb-1">Julio 2024 – <span id="present-day"></span></small>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFreelancer">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFreelancer"
+              aria-expanded="false"
+              aria-controls="collapseFreelancer"
+            >
+              <div class="w-100 d-flex justify-content-between align-items-center">
+                <div class="accordion-title-role">
+                  <h6 class="fw-lighter">Soluciones personalizadas (Freelancer)</h6>
+                  <h4 class="fw-semibold">Desarrollador de aplicaciones web</h4>
+                </div>
+                <small class="fst-italic fw-light">Mayo 2024 - Julio 2024</small>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseFreelancer"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFreelancer"
+            data-bs-parent="#accordionExperiencia"
+          >
+            <div class="accordion-body d-flex flex-row flex-nowrap">
+              <div class="resume-activities text-justify">
+              <h6>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#262626">
+                  <path d="M160-80q-33 0-56.5-23.5T80-160v-440q0-33 23.5-56.5T160-680h200v-120q0-33 23.5-56.5T440-880h80q33 0 56.5 23.5T600-800v120h200q33 0 56.5 23.5T880-600v440q0 33-23.5 56.5T800-80H160Zm0-80h640v-440H600q0 33-23.5 56.5T520-520h-80q-33 0-56.5-23.5T360-600H160v440Zm80-80h240v-18q0-17-9.5-31.5T444-312q-20-9-40.5-13.5T360-330q-23 0-43.5 4.5T276-312q-17 8-26.5 22.5T240-258v18Zm320-60h160v-60H560v60Zm-200-60q25 0 42.5-17.5T420-420q0-25-17.5-42.5T360-480q-25 0-42.5 17.5T300-420q0 25 17.5 42.5T360-360Zm200-60h160v-60H560v60ZM440-600h80v-200h-80v200Zm40 220Z"/>
+                </svg>
+                <span class="mx-2">Descripción del puesto:</span>
+              </h6>
               <p class="text-muted small">
-                Mi enfoque actual se centra en construir soluciones web que no solo funcionen, sino que también evolucionen de forma sostenible. En este proceso he adoptado principios como SOLID y Clean Architecture, los cuales me han permitido organizar mejor el código, trabajar con mayor claridad y reducir la deuda técnica a largo plazo. Este aprendizaje ha sido clave para transformar la manera en que estructuro los proyectos, fomentando calidad desde la base.
+                Durante este periodo trabajé de forma independiente en el desarrollo de soluciones a medida, enfocadas en cubrir necesidades específicas de clientes con herramientas funcionales y escalables. Uno de los principales proyectos fue la creación de un sistema de inventariado personalizado para una farmacia local, cuyo objetivo era centralizar el control de ventas y generar indicadores clave del negocio, incluyendo productos más vendidos, pedidos cancelados, órdenes con proveedores y visualización gráfica del estado general.
               </p>
               <p class="text-muted small">
-                He tenido la oportunidad de participar en distintos tipos de desarrollos, tanto en proyectos bajo metodología Scrum como en procesos más tradicionales tipo cascada, lo que me ha dado una visión más integral de cómo adaptarme a distintos entornos. Trabajo constantemente con planificación, refinamiento de tareas, estimaciones y gestión de backlog, principalmente desde Azure DevOps.
+                Paralelamente, diseñé y desarrollé una herramienta interna de seguimiento de tiempo llamada KronoBook, orientada a registrar actividades y documentar horas laborales de forma flexible. Esta aplicación fue pensada para mejorar mis propios procesos de productividad, evitando el uso de soluciones de pago o archivos dispersos, y permitiendo configuraciones adaptables a cualquier tipo de equipo o proyecto.
               </p>
               <p class="text-muted small">
-                Más allá del código, me enfoco en comprender el impacto real de cada funcionalidad: busco que las aplicaciones sean herramientas útiles para quienes las usan, optimizando procesos internos y mejorando experiencias tanto para clientes como para sus propios usuarios. He participado en proyectos tipo producto y servicio, siempre con la meta de aportar valor de forma tangible.
+                Este periodo también marcó una etapa de transición en mi carrera profesional, en la cual comencé a consolidar mi perfil como desarrollador semi-senior. Esto se reflejó en una mayor rigurosidad en la adopción de buenas prácticas de diseño y arquitectura, así como en el fortalecimiento de mi experiencia general en el desarrollo de software completo.
               </p>
-              <p class="text-muted small">
-                Me mantengo en formación constante, explorando nuevas tecnologías y prácticas de arquitectura, y siempre con la meta de entregar soluciones más escalables, mantenibles y alineadas a objetivos reales.
+              <h6>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#262626">
+                  <path d="M819-28 701-146q-48 32-103.5 49T480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-62 17-117.5T146-701L27-820l57-57L876-85l-57 57ZM440-162v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm374-99-58-58q21-37 32.5-77.5T800-480q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v45L261-814q48-31 103-48.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 61-17.5 116T814-261Z"/>
+                </svg>
+                <span class="mx-2">Proyectos <small>(Privados)</small></span>
+              </h6>
+              <p class="text-muted small mx-5">
+                • Sistema de inventariado personalizado para farmacia local, con control de ventas, indicadores clave y gestión de pedidos y proveedores.
+              </p>
+              <h6>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="20px" fill="#262626"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm276-102q41-45 62.5-100.5T800-480q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h240q17 0 28.5 11.5T600-440v120h40q26 0 47 15.5t29 40.5Z"/></svg>
+                <span class="mx-2">Proyectos <small>(Publicos)</small></span>
+              </h6>
+              <p class="text-muted small mx-5">
+                • <span class="fw-bold">KronoBook</span>, herramienta interna para el registro de actividades y seguimiento de tiempo, adaptada a equipos y proyectos específicos.
               </p>
             </div>
-          </div>
-          <div class="tab-pane fade" id="list-2024" role="tabpanel" aria-labelledby="list-2024-list">
-            <h4 class="fw-bold mb-3">2024</h4>
-            <div class="mb-3">
-              <h6 class="mb-1 fw-semibold">Desarrollador web – <span class="text-muted">Soluciones personalizadas (Freelancer)</span></h6>
-              <small class="text-secondary d-block mb-1">Mayo 2024 – Julio 2024</small>
-               <p class="text-muted small">
-                  Durante este periodo trabajé en el desarrollo de un sistema de inventariado personalizado para una farmacia local. El objetivo fue centralizar el control de ventas, generar indicadores clave como productos más vendidos, pedidos cancelados, órdenes en proceso con proveedores y gráficas sobre el estado general del negocio. La aplicación fue diseñada para ejecutarse en un entorno local, según las preferencias del cliente.
-                </p>
-                <p class="text-muted small">
-                  Además, con la intención de mejorar mis propios procesos de productividad, diseñé y desarrollé <strong>KronoBook</strong>, una herramienta ligera para el registro de actividades y seguimiento del tiempo. Esta solución nace de la necesidad constante de documentar horas laborales sin depender de soluciones de pago ni hojas de Excel, ofreciendo catálogos configurables adaptables a cualquier equipo o proyecto.
-                </p>
-                <p class="text-muted small">
-                  Este periodo también marcó una etapa de transición importante en mi carrera, ya que comencé a consolidar mi perfil como desarrollador <em>semi-senior</em>. Esto implicó adoptar de forma más rigurosa principios como <strong>SOLID</strong> y <strong>Clean Architecture</strong>, así como profundizar mi experiencia con tecnologías como <strong>Angular</strong>, <strong>Python</strong> y servicios en la <strong>nube con Azure</strong>.
-                </p>
             </div>
           </div>
-          <div class="tab-pane fade" id="list-2023" role="tabpanel" aria-labelledby="list-2023-list">
-            <h2>2023</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, aliquam pariatur. Voluptate perferendis facilis aspernatur soluta repudiandae similique tempore consectetur, nisi reiciendis, voluptas nemo sint cum error ab neque officia?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatem, commodi illo, similique exercitationem id ea nobis magni suscipit maiores quo reiciendis dignissimos ut est reprehenderit maxime totam, quod culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non molestias deleniti iste laudantium inventore placeat enim veniam, aliquam porro, voluptatum atque est nulla minus, error doloremque facere. Dolorum, quidem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque id cupiditate magnam quibusdam, eos aut natus expedita rem ut. Itaque repellendus, nesciunt velit quidem aliquam unde quas nam necessitatibus odio.
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingGSB">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseGSB"
+              aria-expanded="false"
+              aria-controls="collapseGSB"
+            >
+              <div class="w-100 d-flex justify-content-between align-items-center">
+                <div class="accordion-title-role">
+                  <h6 class="fw-lighter">GSB Solutions</h6>
+                  <h4 class="fw-semibold">Desarrollador de aplicaciones web</h4>
+                </div>
+                <small class="fst-italic fw-light">Marzo 2022 - Mayo 2024</small>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseGSB"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingGSB"
+            data-bs-parent="#accordionExperiencia"
+          >
+            <div class="accordion-body d-flex flex-row flex-nowrap">
+              <div class="resume-activities text-justify">
+                <h6>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#262626">
+                    <path d="M160-80q-33 0-56.5-23.5T80-160v-440q0-33 23.5-56.5T160-680h200v-120q0-33 23.5-56.5T440-880h80q33 0 56.5 23.5T600-800v120h200q33 0 56.5 23.5T880-600v440q0 33-23.5 56.5T800-80H160Zm0-80h640v-440H600q0 33-23.5 56.5T520-520h-80q-33 0-56.5-23.5T360-600H160v440Zm80-80h240v-18q0-17-9.5-31.5T444-312q-20-9-40.5-13.5T360-330q-23 0-43.5 4.5T276-312q-17 8-26.5 22.5T240-258v18Zm320-60h160v-60H560v60Zm-200-60q25 0 42.5-17.5T420-420q0-25-17.5-42.5T360-480q-25 0-42.5 17.5T300-420q0 25 17.5 42.5T360-360Zm200-60h160v-60H560v60ZM440-600h80v-200h-80v200Zm40 220Z"/>
+                  </svg>
+                  <span class="mx-2">Descripción del puesto:</span>
+                </h6>
+                <p class="text-muted small">
+                  Durante este periodo colaboré en proyectos clave para una firma legal de gran importancia, asumiendo tareas de desarrollo a partir de historias de usuario previamente refinadas y participando en su estimación bajo metodologías ágiles. Formé parte del ciclo completo de desarrollo, desde el análisis y refinamiento hasta la entrega de funcionalidades.
+                </p>
+                <p class="text-muted small">
+                  Contribuí al mantenimiento y evolución de aplicaciones existentes, realizando mejoras de código y resolviendo bugs en producción. También participé activamente en la resolución de vulnerabilidades de seguridad identificadas mediante reportes SAST, DAST y pruebas de penetración.
+                </p>
+                <p class="text-muted small">
+                  Mis responsabilidades incluyeron la documentación técnica, diseño y administración de bases de datos relacionales, así como tareas relacionadas con prácticas DevOps, como la configuración de pipelines CI/CD, escaneo de seguridad y versionado de código.
+                </p>
+                <p class="text-muted small">
+                  Adicionalmente, colaboré en el desarrollo de herramientas de línea de comandos y servicios de backend que complementaron las funcionalidades principales. Este periodo marcó también el inicio formal de mi trayectoria como desarrollador fullstack, con mayor exposición a tecnologías tanto del lado cliente como del servidor.
+                </p>
+                <p class="text-muted small">
+                  Finalmente, también participé en proyectos internos de la empresa, contribuyendo al crecimiento y fortalecimiento de productos y servicios propios.
+                </p>
+                <h6>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#262626">
+                    <path d="M819-28 701-146q-48 32-103.5 49T480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-62 17-117.5T146-701L27-820l57-57L876-85l-57 57ZM440-162v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm374-99-58-58q21-37 32.5-77.5T800-480q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v45L261-814q48-31 103-48.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 61-17.5 116T814-261Z"/>
+                  </svg>
+                  <span class="mx-2">Proyectos <small>(Privados)</small></span>
+                </h6>
+                <p class="text-muted small mx-5">
+                  • Herramientas de gestión y automatización para firma legal, incluyendo servicios backend, mantenimiento de código legacy y resolución de vulnerabilidades.
+                </p>
+                <p class="text-muted small mx-5">
+                  • Aplicaciones internas de soporte y herramientas CLI para facilitar flujos de trabajo operativos, integradas a entornos controlados.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="tab-pane fade" id="list-2022" role="tabpanel" aria-labelledby="list-2022-list">
-            <h2>2022</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, aliquam pariatur. Voluptate perferendis facilis aspernatur soluta repudiandae similique tempore consectetur, nisi reiciendis, voluptas nemo sint cum error ab neque officia?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatem, commodi illo, similique exercitationem id ea nobis magni suscipit maiores quo reiciendis dignissimos ut est reprehenderit maxime totam, quod culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non molestias deleniti iste laudantium inventore placeat enim veniam, aliquam porro, voluptatum atque est nulla minus, error doloremque facere. Dolorum, quidem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque id cupiditate magnam quibusdam, eos aut natus expedita rem ut. Itaque repellendus, nesciunt velit quidem aliquam unde quas nam necessitatibus odio.
-          </div>
-          <div class="tab-pane fade" id="list-2021" role="tabpanel" aria-labelledby="list-2021-list">
-            <h2>2021</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, aliquam pariatur. Voluptate perferendis facilis aspernatur soluta repudiandae similique tempore consectetur, nisi reiciendis, voluptas nemo sint cum error ab neque officia?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatem, commodi illo, similique exercitationem id ea nobis magni suscipit maiores quo reiciendis dignissimos ut est reprehenderit maxime totam, quod culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non molestias deleniti iste laudantium inventore placeat enim veniam, aliquam porro, voluptatum atque est nulla minus, error doloremque facere. Dolorum, quidem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque id cupiditate magnam quibusdam, eos aut natus expedita rem ut. Itaque repellendus, nesciunt velit quidem aliquam unde quas nam necessitatibus odio.
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAmbarRojoStudio">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseAmbarRojoStudio"
+              aria-expanded="false"
+              aria-controls="collapseAmbarRojoStudio"
+            >
+              <div class="w-100 d-flex justify-content-between align-items-center">
+                <div class="accordion-title-role">
+                  <h6 class="fw-lighter">Ambar Rojo Studio</h6>
+                  <h4 class="fw-semibold">Desarrollador web jr</h4>
+                </div>
+                <small class="fst-italic fw-light">Abril 2021 - Marzo 2022</small>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseAmbarRojoStudio"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingAmbarRojoStudio"
+            data-bs-parent="#accordionExperiencia"
+          >
+            <div class="resume-activities text-justify">
+              <h6>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#262626">
+                  <path d="M160-80q-33 0-56.5-23.5T80-160v-440q0-33 23.5-56.5T160-680h200v-120q0-33 23.5-56.5T440-880h80q33 0 56.5 23.5T600-800v120h200q33 0 56.5 23.5T880-600v440q0 33-23.5 56.5T800-80H160Zm0-80h640v-440H600q0 33-23.5 56.5T520-520h-80q-33 0-56.5-23.5T360-600H160v440Zm80-80h240v-18q0-17-9.5-31.5T444-312q-20-9-40.5-13.5T360-330q-23 0-43.5 4.5T276-312q-17 8-26.5 22.5T240-258v18Zm320-60h160v-60H560v60Zm-200-60q25 0 42.5-17.5T420-420q0-25-17.5-42.5T360-480q-25 0-42.5 17.5T300-420q0 25 17.5 42.5T360-360Zm200-60h160v-60H560v60ZM440-600h80v-200h-80v200Zm40 220Z"/>
+                </svg>
+                <span class="mx-2">Descripción del puesto:</span>
+              </h6>
+              <p class="text-muted small">
+                Durante este periodo me desempeñé como desarrollador web junior, colaborando de tiempo completo con el cliente GSB. Mis actividades incluían el desarrollo de funcionalidades a partir de documentación técnica no estructurada, diseño de interfaces, validación de reglas de negocio y ejecución de pruebas funcionales.
+              </p>
+              <p class="text-muted small">
+                También elaboré manuales de usuario, diagramas de bases de datos y participé activamente en el análisis y validación de requerimientos para proyectos web.
+              </p>
+              <p class="text-muted small">
+                Este rol marcó el inicio de mi transición hacia el desarrollo fullstack, comenzando con tecnologías base como JavaScript y CSS, e integrando gradualmente frameworks y herramientas como .NET, Razor, MVC 5, Stored Procedures, Entity Framework, Vue, Ionic y jQuery a mi stack tecnológico.
+              </p>
+              <h6>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#262626">
+                  <path d="M819-28 701-146q-48 32-103.5 49T480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-62 17-117.5T146-701L27-820l57-57L876-85l-57 57ZM440-162v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm374-99-58-58q21-37 32.5-77.5T800-480q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v45L261-814q48-31 103-48.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 61-17.5 116T814-261Z"/>
+                </svg>
+                <span class="mx-2">Proyectos <small>(Privados)</small></span>
+              </h6>
+              <p class="text-muted small mx-5">
+                • Módulo de control de acceso, pruebas funcionales y validación de reglas de negocio para sistemas administrativos internos.
+              </p>
+              <p class="text-muted small mx-5">
+                • Interfaces web para gestión de datos jurídicos; diagramas de base de datos y documentación funcional para procesos legales y administrativos.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -182,7 +371,7 @@
 <section id="contact" class="py-5">
   <div class="container">
     <h2 class="section-title">Contacto</h2>
-    <p>Puedes escribirme a <a href="mailto:carlosisaacxx@gmail.com">carlosisaacxx@gmail.com</a> o conectarte en <a href="https://www.linkedin.com/in/carlos-guzman-developer-web/" target="_blank">LinkedIn</a>.</p>
+    <p>Puedes escribirme a mi correo <a href="mailto:carlosisaacxx@gmail.com">carlosisaacxx@gmail.com</a> o conectarte en <a href="https://www.linkedin.com/in/carlos-guzman-developer-web/" target="_blank">LinkedIn</a>.</p>
   </div>
 </section>
 
