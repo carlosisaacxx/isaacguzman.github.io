@@ -291,3 +291,65 @@ section {
   color: var(--color-t);
   background-color: var(--color-p);
 }
+
+/*Tech & Tools*/
+#skills{
+  height: 90vh;
+}
+
+.grid-tech-tools {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.grid-tech-tools .card{
+  margin: 1.25em 0 0 0 !important;
+  width: 20vw;
+  height: 28vw;
+  border: none;
+  border-radius: 1em !important;
+  background-color: var(--color-p);
+  box-shadow: 0px 10px 20px -11px var(--color-s);
+  transition: height 1s ease 0s;
+}
+
+.grid-tech-tools .card:hover{
+  height: 30vw;
+}
+
+#skills .grid-tech-tools .skills-title{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+#skills .grid-tech-tools .skills-title i{
+  margin-bottom: .5em;
+  color: var(--color-q);
+}
+
+#skills .grid-tech-tools .skills-title p{
+  margin: 0 1em .5em 1em;
+  padding: 0;
+  color: var(--color-q);
+}
+
+#skills .grid-tech-tools .card-content{
+  margin: .5em .5em .5em .5em;
+  color: var(--color-q);
+  opacity: 0.9;
+}
+
+#skills .grid-tech-tools .card-content .framework{
+  margin: 0;
+  padding: 0;
+  font-size: .85em;
+  color: var(--color-q);
+}
+
+#skills .grid-tech-tools .card-content .badge{
+  margin-top: 1em;
+  background-color: var(--color-q);
+}
