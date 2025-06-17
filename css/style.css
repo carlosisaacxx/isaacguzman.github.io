@@ -1,10 +1,37 @@
 :root {
-  --color-p: #F2F2F2;
-  --color-s: #A6A6A6;
+  --color-p: #f2f2f2;
+  --color-s: #a6a6a6;
   --color-t: #595959;
   --color-q: #262626;
-  --color-f: #0D0D0D;
+  --color-f: #0d0d0d;
   --font-base: 'Roboto', sans-serif;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-t);
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-s); /* aclarar un poco en hover */
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--color-f);
 }
 
 body {
@@ -40,6 +67,21 @@ section {
   text-transform: uppercase;
   letter-spacing: .1rem;
 }
+
+.contact-info {
+  font-size: 0.95rem;
+  color: var(--color-q);
+}
+
+.contact-info i {
+  color: var(--color-q);
+}
+
+.contact-info p {
+  margin-bottom: 0;
+}
+
+/*Contact me resume*/
 
 /* Timeline (educación u otra sección) */
 .education-list{
@@ -294,26 +336,18 @@ section {
 }
 
 /*Tech & Tools*/
-#skills{
-  height: 100%;
+#skills .card{
+  border: none;
+  background-color: var(--color-p);
 }
 
-#skills .card {
-  border: none !important;
+#skills .card .card-title{
+  font-size: 1em;
+  margin-top: 1em;
+  color: var(--color-f);
 }
 
-#skills .card .card-body i,h6{
-  font-size: 1em !important;
-  color: var(--color-q);
-  opacity: .9;
-}
-
-#skills .card .card-body .card-content .card-subtitle{
-  color: var(--color-q);
-  opacity: .95;
-}
-
-#skills .card .card-body .card-content .badge{
-  background-color: var(--color-q);
-  margin-right: 1em;
+#skills .card .card-body{
+  color: var(--color-f);
+  opacity: 1;
 }
