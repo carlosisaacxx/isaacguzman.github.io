@@ -1,6 +1,6 @@
 # 🧠 Fullstack Development Portfolio — Carlos Isaac Guzmán Pérez
 
-Este repositorio tiene como propósito presentar de forma clara y profesional mi perfil como desarrollador fullstack, así como documentar experiencias, prácticas y enfoques adquiridos en mi trayectoria. Está orientado tanto para reclutadores técnicos como para otros desarrolladores o estudiantes que busquen referencias reales sobre el trabajo que implica desempeñarse en esta disciplina.
+Este repositorio tiene como propósito presentar de forma clara y profesional mi perfil como desarrollador fullstack, así como documentar experiencias, prácticas y enfoques adquiridos en mi trayectoria. Está orientado tanto para reclutadores técnicos como para otros desarrolladores o estudiantes que busquen referencias reales sobre el trabajo que implica desempeñarse en esta disciplina
 
 ---
 
