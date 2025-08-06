@@ -17,7 +17,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
 
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -26,26 +26,27 @@
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#about">Sobre mí</a></li>
         <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education">Educación</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#education">Educación</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Tecnologías</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#contact">Contacto</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- Hero -->
-<section id="hero" class="py-5 text-center bg-light">
+<section id="hero">
   <div class="container">
-    <img src="assets/avatar-profile.jpg" class="rounded-circle border border-3 border-success" alt="img-avatar">
-  </div>
-  <div class="container">
-    <h1 class="display-5 fw-bold">Carlos Isaac Guzmán Pérez</h1>
-    <p class="lead text-secondary">Ingeniero en TI</p>
-    <p>Profesional en el desarrollo de aplicaciones web; con perfil de fullstack. Especializado en generar soluciones robustas y escalables bajo metodologías ágiles e implementado mejores practicas en Clean Code/Architecture.</p>
-    <a href="#contact" class="btn btn-outline-dark mt-3">Contáctame</a>
+    <img src="assets/avatar-profile.jpg" class="rounded-circle" alt="img-avatar">
+    <h1 class="display-5" style="font-size: 2.5em !important; font-weight: 500; letter-spacing: 0.099em;">Carlos Isaac Guzmán Pérez</h1>
+    <p class="lead" style="font-size: 1.15em; font-weight: 200; letter-spacing: .100em; font-style: italic;">Ingeniero en T.I</p>
+    <p class="text-justify" style="font-weight: 300; letter-spacing: 0.075em;">Apasionado por transformar ideas cotidianas en soluciones tecnológicas robustas y escalables, diseño experiencias y procesos de negocio que aportan valor real a empresas y usuarios.
+      Creo firmemente que el trabajo en equipo potencia la creatividad y la calidad, permitiendo que las mejores soluciones surjan a través de la colaboración y la lluvia de ideas. Disfruto escuchar y ver la satisfacción de los clientes al comprobar resultados tangibles.
+      Si buscas innovación, calidad y compromiso para llevar tu proyecto al siguiente nivel, será un gusto conversar y aportar a tu visión.
+    </p>
+    <a href="#contact" class="btn btn-outline-dark mt-2" style="font-size: 1em !important; font-weight: 300; letter-spacing: 0.090em;">Contáctame</a>
   </div>
 </section>
 
@@ -54,20 +55,16 @@
   <div class="container">
     <h2 class="section-title">Sobre mí</h2>
     <p class="text-justify ordered-paragraph">
-      Mi interés por la tecnología comenzó desde niño, viendo a mi papá reparar equipos a altas horas de la noche. Ver cómo rescataba un disco duro aparentemente perdido, eso despertó mi curiosidad y marcó el inicio de mi camino como programador.
-      <br>
-      Me motiva ayudar a los demás, resolver problemas con creatividad y colaborar para lograr soluciones eficientes. Disfruto trabajar en equipo, conocer nuevas personas y encontrar inspiración en las pequeñas cosas, como un buen atardecer... o un buen bug resuelto.
-      <br>
-      Soy esposo y padre, y mi familia es mi motor para seguir aprendiendo y creciendo cada día. Trabajo de forma remota desde el inicio de mi carrera, y valoro profundamente la flexibilidad y el enfoque que este modelo me ofrece.
+      Soy una persona curiosa y analítica, marcada desde niño por la influencia de mi padre y su taller de computadoras.Me inspira entender cómo funcionan las cosas y ayudar a otros a resolver sus retos diarios, creando soluciones tecnológicas prácticas y usables. Disfruto aprender y compartir, trabajar en equipo y encontrar creatividad en cada reto. Valoro la honestidad, la empatía y la colaboración, tanto en el ámbito profesional como en el personal. Fuera del trabajo, diseño escenarios, descubro música y comparto momentos con mi familia, buscando siempre ese equilibrio que impulsa mi crecimiento en ambos aspectos de la vida.
     </p>
-    <div class="contact-info d-flex flex-wrap justify-content-start gap-4 mt-3">
+    <div class="contact-info d-flex flex-wrap justify-content-end gap-4 mt-3">
       <div class="d-flex align-items-center gap-2">
         <i class="fas fa-laptop-house fs-4"></i>
         <p class="mb-0">En un rincón de México (Modo remoto)</p>
       </div>
       <div class="d-flex align-items-center gap-2">
         <i class="fas fa-paper-plane fs-5"></i>
-        <p class="mb-0">carlosisaacxx@gmail.com</p>
+        <a href="mailto:carlosisaacxx@gmail.com" style="color: #262626;">carlosisaacxx@gmail.com</a>
       </div>
       <div class="d-flex align-items-center gap-2">
         <i class="fas fa-mobile fs-5"></i>
@@ -78,11 +75,66 @@
 </section>
 
 <!-- Experience -->
-<section id="experience" class="py-5 bg-light">
+<section id="experience" class="py-5 w-100">
   <div class="container">
     <h2 class="section-title">Experiencia Profesional</h2>
     <div class="container my-4">
       <div class="accordion custom-accordion" id="accordionExperiencia">
+        <div class="accordion-item">
+  <h2 class="accordion-header" id="headingFreelancer2">
+    <button
+      class="accordion-button collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseFreelancer2"
+      aria-expanded="true"
+      aria-controls="collapseFreelancer2"
+    >
+      <div class="w-100 d-flex justify-content-between align-items-center">
+        <div class="accordion-title-role">
+          <h6 class="fw-lighter">Soluciones personalizadas (Freelancer)</h6>
+          <h4 class="fw-semibold">Ingeniero de Software</h4>
+        </div>
+        <small class="fst-italic fw-light">Junio 2025 – Actualidad</small>
+      </div>
+    </button>
+  </h2>
+  <div
+    id="collapseFreelancer2"
+    class="accordion-collapse collapse show"
+    aria-labelledby="headingFreelancer2"
+    data-bs-parent="#accordionExperiencia"
+  >
+    <div class="accordion-body d-flex flex-row flex-nowrap">
+      <div class="resume-activities text-justify">
+        <h6>
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#262626">
+            <path d="M160-80q-33 0-56.5-23.5T80-160v-440q0-33 23.5-56.5T160-680h200v-120q0-33 23.5-56.5T440-880h80q33 0 56.5 23.5T600-800v120h200q33 0 56.5 23.5T880-600v440q0 33-23.5 56.5T800-80H160Zm0-80h640v-440H600q0 33-23.5 56.5T520-520h-80q-33 0-56.5-23.5T360-600H160v440Zm80-80h240v-18q0-17-9.5-31.5T444-312q-20-9-40.5-13.5T360-330q-23 0-43.5 4.5T276-312q-17 8-26.5 22.5T240-258v18Zm320-60h160v-60H560v60Zm-200-60q25 0 42.5-17.5T420-420q0-25-17.5-42.5T360-480q-25 0-42.5 17.5T300-420q0 25 17.5 42.5T360-360Zm200-60h160v-60H560v60ZM440-600h80v-200h-80v200Zm40 220Z"/>
+          </svg>
+          <span class="mx-2">Descripción del puesto:</span>
+        </h6>
+        <p class="text-muted small">
+          Actualmente me desempeño como ingeniero de software independiente, diseñando soluciones a medida que integran tecnologías web, móviles y de datos. Participo desde la concepción de la idea hasta la implementación, priorizando calidad, usabilidad y resultados tangibles para los clientes.
+        </p>
+        <h6>
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#262626">
+            <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm276-102q41-45 62.5-100.5T800-480q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h240q17 0 28.5 11.5T600-440v120h40q26 0 47 15.5t29 40.5Z"/>
+          </svg>
+          <span class="mx-2">Proyectos <small>(Actuales)</small></span>
+        </h6>
+        <p class="text-muted small mx-5">
+          • Aplicación móvil VIN Vehicle Info: Desarrollo de una app móvil que permite consultar los datos de cualquier vehículo a partir de su código VIN, mediante escaneo con cámara o introducción manual, integrando OCR y consumo de la API oficial de NHTSA.
+        </p>
+        <p class="text-muted small mx-5">
+          • Herramienta de carga masiva a Azure Blob Storage: Solución en Python para cargar archivos JSON, CSV y Parquet a Azure Blob Storage, optimizando la integración y análisis de datos.
+        </p>
+        <p class="text-muted small mx-5">
+          • Chat Asistente Experto para Citas: Proyecto de chatbot especializado en gestión automatizada de citas con NLP y arquitectura robusta, orientado a integraciones en negocios reales.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingBeit">
             <button
@@ -90,7 +142,7 @@
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseBeit"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="collapseBeit"
             >
               <div class="w-100 d-flex justify-content-between align-items-center">
@@ -104,7 +156,7 @@
           </h2>
           <div
             id="collapseBeit"
-            class="accordion-collapse collapse show"
+            class="accordion-collapse collapse"
             aria-labelledby="headingBeit"
             data-bs-parent="#accordionExperiencia"
           >

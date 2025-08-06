@@ -107,11 +107,42 @@ section {
   font-weight: 300;
 }
 
-/* Avatar hero */
-#hero img {
-  width: 10vw;
-  height: 10vw;
+/*Sección Inicio*/
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-p);
 }
+
+#hero > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #hero img {
+    width: 120px;
+    height: 120px;
+  }
+}
+/*################*/
 
 .ordered-paragraph {
   word-break: keep-all;
