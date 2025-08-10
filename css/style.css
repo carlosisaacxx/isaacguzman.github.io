@@ -84,28 +84,39 @@ section {
 /*Contact me resume*/
 
 /* Timeline (educación u otra sección) */
-.education-list{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  border: none !important;
-  border-radius: .2em !important;
+/* Estilos para las tarjetas de educación */
+.education-card {
+  background-color: var(--color-p);
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-q);
+  margin-bottom: 2em;
 }
 
-.education-list h4{
-  font-size: 1.1em !important;
+/* Estilos para los títulos h4 */
+.education-card h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 0.090em;
 }
 
-.education-list .education-subtitle{
-  font-size: .80em !important;
-  font-weight: 400;
-}
-
-.education-list h6{
-  font-size: 1em !important;
+/* Estilos para subtítulos h6 */
+.education-card h6 {
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  font-size: 0.8em;
+  color: var(--color-q);
+  margin-bottom: 1em;
 }
+
+/* Estilos para la fecha (antes small, ahora div) */
+.education-date {
+  font-style: italic;
+  font-weight: 200;
+  font-size: .8em;
+}
+
 
 /*Sección Inicio*/
 
