@@ -1,13 +1,6 @@
-$(document).ready(function () {
-  const mounth = [
-    "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
-  ];
-
-  const date = new Date();
-  const nameMounth = mounth[date.getMonth()];
-  const year = date.getFullYear();
-
-  const dateFormatter = `${nameMounth } ${year}`;
-  $("#present-day").text(dateFormatter);
-});
+// Escribe el año actual en cualquier elemento con [data-year] o #currentYear
+(function () {
+  const y = String(new Date().getFullYear());
+  const nodes = document.querySelectorAll('[data-year], #currentYear');
+  nodes.forEach(n => n.textContent = y);
+})();
