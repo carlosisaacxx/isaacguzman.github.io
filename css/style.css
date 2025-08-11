@@ -155,3 +155,8 @@ section:not(#hero)::after{ bottom:0; transform:translateY(1.5rem) }
 
 /* En modo contraído, todas las tarjetas quedan alineadas por altura de header */
 .tech-card .collapse:not(.show){ /* no height fixed: dejamos que el grid se mantenga compacto */ }
+
+#skillsExpandAll{
+  color: var(--color-p);
+  background-color: var(--color-t);
+}
