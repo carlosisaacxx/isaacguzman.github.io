@@ -90,105 +90,372 @@
   </section>
 
   <!-- ===== Tecnologías ===== -->
-  <section id="skills" class="py-5">
-    <div class="container">
-      <h2 class="section-title">Tecnologías</h2>
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Tecnologías</h2>
 
-      <!-- Frontend -->
-      <div class="skills-block reveal-up">
-        <div class="skills-head">
-          <h3 class="skills-title">Frontend</h3>
-          <div class="skills-subtitle">Lenguajes · Frameworks · Librerías</div>
-        </div>
-        <div class="row g-3">
-          <div class="col-md-4">
-            <div class="tech-card">
-              <div class="tech-head"><span class="pill">Lenguajes</span></div>
-              <ul class="tech-list">
-                <li><span class="dot"></span> HTML5 / CSS3</li>
-                <li><span class="dot"></span> TypeScript / JavaScript</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="tech-card">
-              <div class="tech-head"><span class="pill">Frameworks</span></div>
-              <ul class="tech-list">
-                <li><span class="dot"></span> Angular</li>
-                <li><span class="dot"></span> Bootstrap 5</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="tech-card">
-              <div class="tech-head"><span class="pill">Librerías</span></div>
-              <ul class="tech-list">
-                <li><span class="dot"></span> RxJS</li>
-                <li><span class="dot"></span> Material Icons / FontAwesome</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <!-- Controles globales -->
+    <div class="skills-actions d-flex gap-2 mb-3">
+      <button id="skillsExpandAll" type="button" class="btn-ghost">Expandir todo</button>
+      <button id="skillsCollapseAll" type="button" class="btn-ghost">Contraer todo</button>
+    </div>
+
+    <!-- Frontend -->
+    <div class="skills-block reveal-up">
+      <div class="skills-head">
+        <h3 class="skills-title">Frontend</h3>
+        <div class="skills-subtitle">Lenguajes · Frameworks · UI & Librerías</div>
       </div>
-
-      <!-- Backend -->
-      <div class="skills-block reveal-up">
-        <div class="skills-head">
-          <h3 class="skills-title">Backend</h3>
-          <div class="skills-subtitle">Lenguajes · Frameworks · Arquitectura</div>
-        </div>
-        <div class="row g-3">
-          <div class="col-md-4">
-            <div class="tech-card"><div class="tech-head"><span class="pill">Lenguajes</span></div>
-              <ul class="tech-list"><li><span class="dot"></span> C# (.NET)</li><li><span class="dot"></span> Python (NLP / scripting)</li></ul>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-fe-lang" aria-expanded="false" aria-controls="sk-fe-lang">
+                <span class="pill">Lenguajes</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="tech-card"><div class="tech-head"><span class="pill">Frameworks</span></div>
-              <ul class="tech-list"><li><span class="dot"></span> ASP.NET / .NET API</li><li><span class="dot"></span> FastAPI</li></ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="tech-card"><div class="tech-head"><span class="pill">Arquitectura</span></div>
-              <ul class="tech-list"><li><span class="dot"></span> Clean Architecture · SOLID</li><li><span class="dot"></span> REST · gRPC</li></ul>
-            </div>
+            <ul id="sk-fe-lang" class="tech-list collapse">
+              <li><span class="dot"></span> HTML5 / CSS3</li>
+              <li><span class="dot"></span> TypeScript / JavaScript</li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <!-- Datos -->
-      <div class="skills-block reveal-up">
-        <div class="skills-head">
-          <h3 class="skills-title">Datos</h3>
-          <div class="skills-subtitle">Motores · Modelado · Optimización</div>
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-fe-fw" aria-expanded="false" aria-controls="sk-fe-fw">
+                <span class="pill">Frameworks</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-fe-fw" class="tech-list collapse">
+              <li><span class="dot"></span> Angular · Material Angular</li>
+              <li><span class="dot"></span> Vue.js</li>
+              <li><span class="dot"></span> React</li>
+              <li><span class="dot"></span> Razor / ASP.NET MVC</li>
+              <li><span class="dot"></span> Bootstrap 5 · Tailwind</li>
+            </ul>
+          </div>
         </div>
-        <div class="row g-3">
-          <div class="col-md-4"><div class="tech-card"><div class="tech-head"><span class="pill">Motores</span></div>
-            <ul class="tech-list"><li><span class="dot"></span> SQL Server</li><li><span class="dot"></span> SQLite / Postgres (básico)</li></ul></div></div>
-          <div class="col-md-4"><div class="tech-card"><div class="tech-head"><span class="pill">Modelado</span></div>
-            <ul class="tech-list"><li><span class="dot"></span> Normalización / relaciones</li><li><span class="dot"></span> JSON en SQL Server</li></ul></div></div>
-          <div class="col-md-4"><div class="tech-card"><div class="tech-head"><span class="pill">Optimización</span></div>
-            <ul class="tech-list"><li><span class="dot"></span> Índices · Query Tuning</li><li><span class="dot"></span> Caché selectivo</li></ul></div></div>
-        </div>
-      </div>
 
-      <!-- Cloud / DevSecOps -->
-      <div class="skills-block reveal-up">
-        <div class="skills-head">
-          <h3 class="skills-title">Cloud & DevSecOps</h3>
-          <div class="skills-subtitle">Servicios · CI/CD · Seguridad</div>
-        </div>
-        <div class="row g-3">
-          <div class="col-md-4"><div class="tech-card"><div class="tech-head"><span class="pill">Azure</span></div>
-            <ul class="tech-list"><li><span class="dot"></span> App Service · Key Vault</li><li><span class="dot"></span> Blob Storage · App Config</li></ul></div></div>
-          <div class="col-md-4"><div class="tech-card"><div class="tech-head"><span class="pill">CI/CD</span></div>
-            <ul class="tech-list"><li><span class="dot"></span> Azure DevOps (YAML)</li><li><span class="dot"></span> Versionado / Semver</li></ul></div></div>
-          <div class="col-md-4"><div class="tech-card"><div class="tech-head"><span class="pill">Seguridad</span></div>
-            <ul class="tech-list"><li><span class="dot"></span> SonarQube / Fortify</li><li><span class="dot"></span> OWASP Top 10</li></ul></div></div>
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-fe-ui" aria-expanded="false" aria-controls="sk-fe-ui">
+                <span class="pill">UI & Librerías</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-fe-ui" class="tech-list collapse">
+              <li><span class="dot"></span> jQuery · RxJS · Axios · HttpClient</li>
+              <li><span class="dot"></span> DataTables · Telerik Kendo UI</li>
+              <li><span class="dot"></span> AdminLTE 3</li>
+              <li><span class="dot"></span> Material Icons · FontAwesome · Google Fonts</li>
+              <li><span class="dot"></span> Figma (colaboración visual)</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Mobile -->
+    <div class="skills-block reveal-up">
+      <div class="skills-head">
+        <h3 class="skills-title">Mobile</h3>
+        <div class="skills-subtitle">Plataformas · Frameworks · Lenguajes</div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-mo-plat" aria-expanded="false" aria-controls="sk-mo-plat">
+                <span class="pill">Plataformas</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-mo-plat" class="tech-list collapse">
+              <li><span class="dot"></span> Android</li>
+              <li><span class="dot"></span> iOS (vía Xamarin/React Native)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-mo-fw" aria-expanded="false" aria-controls="sk-mo-fw">
+                <span class="pill">Frameworks</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-mo-fw" class="tech-list collapse">
+              <li><span class="dot"></span> React Native</li>
+              <li><span class="dot"></span> Ionic</li>
+              <li><span class="dot"></span> Xamarin</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-mo-lang" aria-expanded="false" aria-controls="sk-mo-lang">
+                <span class="pill">Lenguajes</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-mo-lang" class="tech-list collapse">
+              <li><span class="dot"></span> Kotlin · Java</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skills-block reveal-up">
+      <div class="skills-head">
+        <h3 class="skills-title">Backend</h3>
+        <div class="skills-subtitle">Lenguajes · Frameworks/APIs · Patrones & Arquitectura</div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-be-lang" aria-expanded="false" aria-controls="sk-be-lang">
+                <span class="pill">Lenguajes</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-be-lang" class="tech-list collapse">
+              <li><span class="dot"></span> C#</li>
+              <li><span class="dot"></span> Python</li>
+              <li><span class="dot"></span> Java</li>
+              <li><span class="dot"></span> PHP 5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-be-fw" aria-expanded="false" aria-controls="sk-be-fw">
+                <span class="pill">Frameworks / APIs</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-be-fw" class="tech-list collapse">
+              <li><span class="dot"></span> .NET 6+ · .NET API · ASP.NET MVC</li>
+              <li><span class="dot"></span> ABP.io</li>
+              <li><span class="dot"></span> FastAPI · Flask</li>
+              <li><span class="dot"></span> Swagger / OpenAPI</li>
+              <li><span class="dot"></span> REST · gRPC</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-be-arch" aria-expanded="false" aria-controls="sk-be-arch">
+                <span class="pill">Patrones & Arquitectura</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-be-arch" class="tech-list collapse">
+              <li><span class="dot"></span> POO · SOLID · DDD · TDD</li>
+              <li><span class="dot"></span> N-capas · Hexagonal</li>
+              <li><span class="dot"></span> Repository · Singleton · DI</li>
+              <li><span class="dot"></span> DTOs · Mappers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Datos -->
+    <div class="skills-block reveal-up">
+      <div class="skills-head">
+        <h3 class="skills-title">Datos</h3>
+        <div class="skills-subtitle">Motores · Acceso/ORM · Modelado & Formatos · Ciencia de datos</div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-data-eng" aria-expanded="false" aria-controls="sk-data-eng">
+                <span class="pill">Motores</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-data-eng" class="tech-list collapse">
+              <li><span class="dot"></span> SQL Server</li>
+              <li><span class="dot"></span> MySQL</li>
+              <li><span class="dot"></span> PostgreSQL</li>
+              <li><span class="dot"></span> SQLite</li>
+              <li><span class="dot"></span> MongoDB</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-data-orm" aria-expanded="false" aria-controls="sk-data-orm">
+                <span class="pill">Acceso / ORM</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-data-orm" class="tech-list collapse">
+              <li><span class="dot"></span> Entity Framework</li>
+              <li><span class="dot"></span> ADO.NET</li>
+              <li><span class="dot"></span> T-SQL · SPs · Triggers · Vistas · Índices</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-data-model" aria-expanded="false" aria-controls="sk-data-model">
+                <span class="pill">Modelado & Formatos</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-data-model" class="tech-list collapse">
+              <li><span class="dot"></span> Normalización · relaciones</li>
+              <li><span class="dot"></span> JSON · CSV · Parquet</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-data-ds" aria-expanded="false" aria-controls="sk-data-ds">
+                <span class="pill">Ciencia de datos</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-data-ds" class="tech-list collapse">
+              <li><span class="dot"></span> Pandas · scikit-learn · NLTK · Joblib</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cloud / DevSecOps -->
+    <div class="skills-block reveal-up">
+      <div class="skills-head">
+        <h3 class="skills-title">Cloud & DevSecOps</h3>
+        <div class="skills-subtitle">Servicios · CI/CD & VCS · Seguridad & Observabilidad</div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-cloud-svc" aria-expanded="false" aria-controls="sk-cloud-svc">
+                <span class="pill">Servicios</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-cloud-svc" class="tech-list collapse">
+              <li><span class="dot"></span> Azure App Service · Functions</li>
+              <li><span class="dot"></span> Blob Storage · Key Vault · App Config</li>
+              <li><span class="dot"></span> Google Cloud — Maps API</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-cloud-ci" aria-expanded="false" aria-controls="sk-cloud-ci">
+                <span class="pill">CI/CD & VCS</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-cloud-ci" class="tech-list collapse">
+              <li><span class="dot"></span> Azure DevOps (Boards, Repos, Pipelines · YAML)</li>
+              <li><span class="dot"></span> Git · TFS · Versionado / SemVer</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-cloud-sec" aria-expanded="false" aria-controls="sk-cloud-sec">
+                <span class="pill">Seguridad & Observabilidad</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-cloud-sec" class="tech-list collapse">
+              <li><span class="dot"></span> OWASP Top 10 · JWT</li>
+              <li><span class="dot"></span> SonarQube · Fortify (SAST/DAST)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plataformas & Reporting -->
+    <div class="skills-block reveal-up">
+      <div class="skills-head">
+        <h3 class="skills-title">Plataformas & Reporting</h3>
+        <div class="skills-subtitle">Power Platform · SharePoint · SSRS · Agile</div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-biz-power" aria-expanded="false" aria-controls="sk-biz-power">
+                <span class="pill">Power Platform</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-biz-power" class="tech-list collapse">
+              <li><span class="dot"></span> Power Plataform · Power Apps · Power Automate</li>
+              <li><span class="dot"></span> SharePoint</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-biz-report" aria-expanded="false" aria-controls="sk-biz-report">
+                <span class="pill">Reporting</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-biz-report" class="tech-list collapse">
+              <li><span class="dot"></span> SSRS (RDL)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="tech-card tech-collapsible">
+            <div class="tech-head">
+              <button class="tech-toggle" data-bs-toggle="collapse" data-bs-target="#sk-biz-agile" aria-expanded="false" aria-controls="sk-biz-agile">
+                <span class="pill">Agilidad</span>
+                <i class="fa-solid fa-chevron-down chev"></i>
+              </button>
+            </div>
+            <ul id="sk-biz-agile" class="tech-list collapse">
+              <li><span class="dot"></span> Scrum · Kanban</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- ===== Experiencia (COMPLETA 2019–Actualidad) ===== -->
   <section id="experience" class="py-5">

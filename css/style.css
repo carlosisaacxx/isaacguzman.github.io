@@ -123,3 +123,35 @@ section:not(#hero)::after{ bottom:0; transform:translateY(1.5rem) }
 .site-footer a{color:var(--color-t)}
 .site-footer a:hover{color:var(--color-q);text-decoration:underline}
 .site-footer .socials{display:flex;gap:.75rem;align-items:center}
+/* ===== Skills: colapsables sin descuadrar ===== */
+.btn-ghost{
+  border:1px solid rgba(0,0,0,.12);
+  background:transparent;
+  color:var(--color-q);
+  padding:.35rem .7rem;
+  border-radius:.5rem;
+  font-size:.9rem;
+  letter-spacing:.04em;
+}
+.btn-ghost:hover{ background:rgba(0,0,0,.06); }
+
+.tech-collapsible .tech-head{
+  display:flex; align-items:center; justify-content:space-between;
+}
+
+.tech-toggle{
+  display:flex; align-items:center; justify-content:space-between;
+  width:100%; gap:.6rem; background:transparent; border:0; padding:0;
+  color:var(--color-q); font-weight:600; letter-spacing:.04em; text-align:left;
+}
+.tech-toggle .chev{ transition: transform .2s ease; }
+.tech-toggle[aria-expanded="true"] .chev{ transform: rotate(180deg); }
+
+.tech-card .tech-list{ margin-top:.5rem; }
+
+/* Card hover intacto (de tu guía) */
+.tech-card{ transition: transform .2s ease, box-shadow .2s ease; }
+.tech-card:hover{ transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.06); }
+
+/* En modo contraído, todas las tarjetas quedan alineadas por altura de header */
+.tech-card .collapse:not(.show){ /* no height fixed: dejamos que el grid se mantenga compacto */ }

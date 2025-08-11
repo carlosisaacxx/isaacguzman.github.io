@@ -83,3 +83,40 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateActiveByScroll, { passive: true });
   window.addEventListener('resize', updateActiveByScroll);
 })();
+
+// ===== Skills: Expandir/Contraer todo y rotación de chevrons =====
+document.addEventListener('DOMContentLoaded', () => {
+  const expandAllBtn = document.getElementById('skillsExpandAll');
+  const collapseAllBtn = document.getElementById('skillsCollapseAll');
+  const collapses = Array.from(document.querySelectorAll('#skills .collapse'));
+
+  // Utilidad: obtener/crear instancia Bootstrap Collapse
+  const getInstance = (el) => bootstrap.Collapse.getOrCreateInstance(el, { toggle: false });
+
+  if (expandAllBtn) {
+    expandAllBtn.addEventListener('click', () => {
+      collapses.forEach(el => getInstance(el).show());
+      // sincroniza aria-expanded en botones
+      document.querySelectorAll('#skills .tech-toggle').forEach(btn => btn.setAttribute('aria-expanded', 'true'));
+    });
+  }
+
+  if (collapseAllBtn) {
+    collapseAllBtn.addEventListener('click', () => {
+      collapses.forEach(el => getInstance(el).hide());
+      document.querySelectorAll('#skills .tech-toggle').forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+    });
+  }
+
+  // Mantén chevron en sync cuando el usuario abre/cierra individualmente
+  collapses.forEach(el => {
+    el.addEventListener('shown.bs.collapse', () => {
+      const btn = el.closest('.tech-card')?.querySelector('.tech-toggle');
+      if (btn) btn.setAttribute('aria-expanded', 'true');
+    });
+    el.addEventListener('hidden.bs.collapse', () => {
+      const btn = el.closest('.tech-card')?.querySelector('.tech-toggle');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+});
